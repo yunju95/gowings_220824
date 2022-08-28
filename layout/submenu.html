@@ -1,0 +1,42 @@
+<div class="inner_menu">
+  <div class="menu_depth1">
+    <strong class="tit_menu">여성회관 소개</strong>
+  </div>
+  <div class="menu_depth2">
+    <strong class="tit_menu">연혁</strong>
+    <ul class="list_menu">
+      <li class="on"><a href="#none" class="link_menu" target="_blank">연혁</a></li> <!-- 활성화된 메뉴 li에 on 클래스 추가 -->
+      <li><a href="#none" class="link_menu" target="_blank">기본목표 및 주요사업</a></li>
+      <li><a href="#none" class="link_menu" target="_blank">직원 소개</a></li>
+      <li><a href="#none" class="link_menu" target="_blank">시설 현황</a></li>
+      <li><a href="#none" class="link_menu" target="_blank">오시는 길</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// 임시 프린트 스크립트
+// function screenPrint() {
+//   window.print();
+// }
+$(function(){
+  $('.menu_depth2 .tit_menu').click(function(){
+    if($(this).parent().hasClass('on')){
+      $(this).parent().removeClass('on');
+      $(this).parent().find('.list_menu').stop().slideUp(250);
+    }else{
+      $(this).parent().addClass('on');
+      $(this).parent().find('.list_menu').stop().slideDown(250);
+    }
+  });
+
+  $(window).on('load resize', function(){
+    if($(this).innerWidth() > 1024){
+      $('.menu_depth2').removeClass('on');
+      $('.menu_depth2 .list_menu').show();
+    }else{
+      $('.menu_depth2 .list_menu').hide();
+    }
+  });
+});
+</script>
