@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고양시 여성회관</title>
+  <title>고양드론센터</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/common.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -18,16 +18,6 @@
     <a href="#container">본문 바로가기</a>
   </div>
   <!-- //skip_nav -->
-  <!-- head_banner -->
-  <div class="head_banner">
-    <div class="inner_banner">
-      <span class="ico_notice"></span>
-      <p>1. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다.<br>
-        2. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다. 중요 알림사항 이니다.</p>
-      </div>
-      <button type="button" class="btn_close">닫기</button>
-    </div>
-  <!-- // head_banner -->
   <div id="wrap" class="has_headbanner"> <!-- 상단 배너가 있을 경우 has_headbanner 클래스 추가 -->
     <!-- header -->
     <header class="header">
@@ -41,227 +31,188 @@
       <h2 class="screen_out">메인 본문</h2>
       <section class="section_mv">
         <div class="wrap_mv">
-          <div class="slide_mv">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide1" style="background-image: url(img/main/mainVisual1.png)"><span class="screen_out">슬라이드1</span></div>
-              <div class="swiper-slide slide2" style="background-image: url(img/main/mainVisual2.png)"><span class="screen_out">슬라이드2</span></div>
-              <div class="wrap_arrow">
-                <div class="swiper-button-prev">이전</div>
-                <div class="swiper-button-next">다음</div>
-              </div>
+          <video class="video" poster="img/main/poster_main.png" playsinline="" muted>
+            <source src="img/mv/mv_main.mp4" type="video/mp4">
+          </video>
+          <img src="img/main/bg_mv.png" alt="" class="img_g">
+          <strong class="tit_mv">슬로건 문구 들어갑니다.</strong>
+        </div>
+      </section>
+      <section class="section_calendar">
+        <div class="wrap_tabmain" role="tablist">
+          <span class="tab_mv" aria-selected="false">대덕 드론비행장</span>
+          <span class="tab_mv" aria-selected="true">드론앵커센터</span> <!-- 활성화시 aria-selected=true / 기본 false -->
+        </div>
+        <div class="inner_section">
+          <div class="head_calendar">
+            <div class="tab_reservation">
+              <a href="#none" class="link_resv resv_facility">시설예약</a>
+              <a href="#none" class="link_resv resv_equipment">장비예약</a>
             </div>
-            <div class="area_controller">
-              <div class="wrap_progress">
-                <span class="num_page page_active"></span>
-                <span class="num_page page_all">02</span>
-              </div>
-              
+            <div class="area_month">
+              <strong class="txt_month">5월</strong>
+              <span class="txt_year">2022년</span>
             </div>
           </div>
-          <div class="area_mvtxt">
-            <span>지금 시작하세요. 새롭게 시작하세요.</span>
-            <strong>새로운 자신을 찾아가는 <em>고양특례시 여성회관</em></strong>
+          <div class="body_calendar">
+            <ol class="list_calendar resv_facility"> <!-- 시설예약 탭 활성화일 경우 resv_facility 클래스 추가 / 장비예약 탭 활성화일 경우 resv_equipment 클래스 추가 -->
+              <li>
+                <a href="#none" class="link_date type_past"> <!-- 지난 일정일 경우 type_past 클래스 추가 -->
+                  <span class="txt_date">일</span>
+                  <span class="num_date">1</span>
+                  <p class="state_close">휴관</p> <!-- 휴관일 경우 p.state_close 구조 추가 -->
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date type_today"> <!-- 당일일 경우 type_today 클래스 추가 -->
+                  <span class="txt_date">월</span>
+                  <span class="num_date">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date">
+                  <span class="txt_date">화</span>
+                  <span class="num_date">3</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date">
+                  <span class="txt_date">수</span>
+                  <span class="num_date">4</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date">
+                  <span class="txt_date">목</span>
+                  <span class="num_date">5</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date">
+                  <span class="txt_date">금</span>
+                  <span class="num_date">6</span>
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date type_close"> <!-- 휴관일 경우 type_close 클래스 추가 -->
+                  <span class="txt_date">토</span>
+                  <span class="num_date">7</span>
+                  <p class="state_close">휴관</p> <!-- 휴관일 경우 p.state_close 구조 추가 -->
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link_date type_close"> <!-- 휴관일 경우 type_close 클래스 추가 -->
+                  <span class="txt_date">일</span>
+                  <span class="num_date">8</span>
+                  <p class="state_close">휴관</p> <!-- 휴관일 경우 p.state_close 구조 추가 -->
+                </a>
+              </li>
+              <li class="type_pc">
+                <a href="#none" class="link_date">
+                  <span class="txt_date">월</span>
+                  <span class="num_date">9</span>
+                </a>
+              </li>
+              <li class="type_pc">
+                <a href="#none" class="link_date">
+                  <span class="txt_date">화</span>
+                  <span class="num_date">10</span>
+                </a>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
-      <section class="section_notice">
+      <section class="section_news">
         <div class="inner_section">
-          <div class="wrap_mainnotice">
-            <div class="wrap_tit">
-              <h2 class="">공지사항</h2>
-              <a href="#none" class="link_more">View more</a>
+          <div class="wrap_news">
+            <div class="tab_news">
+              <a href="#none" class="link_tab"><span>공지사항</span></a>
+              <a href="#none" class="link_tab on"><span>소식</span></a> <!-- 탭 클릭시 on 클래스 추가 -->
+              <a href="#none" class="link_tab"><span>Q&A</span></a>
+              <a href="#none" class="link_tab"><span>자료실</span></a>
             </div>
-            <ul class="list_notice">
+            <div class="cont_news">
+              <div class="box_date">
+                <strong class="num_day">30</strong>
+                <span class="num_month">2022.03</span>
+              </div>
+              <a href="#none" class="link_news">
+                <strong class="tit_news">공지사항 제목입니다</strong>
+                <p class="txt_news">내용이 조금 보입니다. 내용이 조금 보입니다. 내용이 조금 보입니다.</p>
+                <p class="txt_news">내용이 조금 보입니다. 내용이 조금 보입니다. 내용이 조금 보입니다.</p>
+              </a>
+            </div>
+            <ul class="list_news">
               <li>
-                <a href="#none" class="link_notice">
-                  <strong class="tit_info">2022년 고양시여성회관 하반기 취창업강사 공개모집</strong>
-                  <span class="txt_date">2022.04</span>
-                </a>
+                <a href="#none" class="link_list">사용기간 중 시설 및 비품 등을 분실 사용기간 중 시설 및 비품 등을 분실 <span class="badge_new">new</span></a> <!-- 새로 추가된 내용일 경우 new 뱃지구조 추가 -->
+                <span class="list_date">2022.03.07</span>
               </li>
               <li>
-                <a href="#none" class="link_notice">
-                  <strong class="tit_info">여성회관 참여정원 '여성회관 우리 뜰' 개인참가자 추가 접수</strong>
-                  <span class="txt_date">2022.04</span>
-                </a>
+                <a href="#none" class="link_list">사용기간 중 시설 및 비품 등을 분실</a>
+                <span class="list_date">2022.03.07</span>
               </li>
               <li>
-                <a href="#none" class="link_notice">
-                  <strong class="tit_info">제68기 여성회관 정규강좌 접수 일정 안내</strong>
-                  <span class="txt_date">2022.04</span>
-                </a>
+                <a href="#none" class="link_list">사용기간 중 시설 및 비품 등을 분실</a>
+                <span class="list_date">2022.03.07</span>
               </li>
               <li>
-                <a href="#none" class="link_notice">
-                  <strong class="tit_info">[필독]온라인 강좌 수강생분들을 위한 zoom 설치 및 강의실 온라인 강좌 수강생분들을 위한 zoom 설치 및 강의실</strong>
-                  <span class="txt_date">2022.04</span>
-                </a>
+                <a href="#none" class="link_list">사용기간 중 시설 및 비품 등을 분실</a>
+                <span class="list_date">2022.03.07</span>
               </li>
             </ul>
+            <a href="#none" class="link_more">더보기&nbsp;&nbsp;<em>+</em></a>
           </div>
-          <div class="wrap_mainpopup">
-            <div class="wrap_tit">
-              <h2 class="">팝업존</h2>
-              <a href="#none" class="link_more">View more</a>
-            </div>
+          <div class="wrap_popoup">
+            <h3 class="wrap_tit">팝업존</h3>
             <div class="slide_popup">
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide1">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
+                  <img src="img/main/temp_popup.png" alt="" class="img_g">
+                  <span class="screen_out">슬라이드1</span>
                 </div>
                 <div class="swiper-slide slide2">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
-                </div>
-                <div class="swiper-slide slide3">
-                  <a href="#none" class="link_item">
-                    <img src="img/main/thumb_popup.png" alt="" class="thumb_g">
-                  </a>
+                  <img src="img/main/temp_popup.png" alt="" class="img_g">
+                  <span class="screen_out">슬라이드2</span>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section_mainedu">
-        <div class="wrap_edu">
-          <div class="wrap_tit">
-            <h2 class="">교육 프로그램</h2>
-            <a href="#none" class="link_more">View more</a>
-            <div class="wrap_navigation">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          <div class="wrap_slide">
-            <div class="outer_tab">
-              <div class="wrap_tabedu" role="tablist">
-                <a href="#none" class="link_tab" aria-selected="true">68기 강좌</a> <!-- 활성화시 aria-selected=true / 기본 false -->
-                <a href="#none" class="link_tab" aria-selected="false">69기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">70기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">71기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">72기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">73기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">74기 강좌</a>
-                <a href="#none" class="link_tab" aria-selected="false">75기 강좌</a>
-              </div>
-            </div>
-            <div class="slide_edu">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application">신청</button>
-                    </div>
-                  </div>
+              <div class="area_controller"> 
+                <div class="wrap_progress">
+                  <span class="num_page page_active"></span>
+                  <span class="num_page page_all">&nbsp;/&nbsp;02</span>
                 </div>
-                <div class="swiper-slide slide2">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급 가나다라마바사 아자차카타파하</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application">신청</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide slide3">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application" disabled>예정</button> <!-- 비활성화 케이스일 경우 disabled 속성 추가 -->
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide slide4">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide slide5">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide slide6">
-                  <div class="box_item">
-                    <div class="inner_box">
-                      <span class="badge_cate">&#91;온라인강좌&#93;</span>
-                      <strong class="tit_item">&#91;온라인&#93;컴퓨터 활용능력 
-                      자격증 2급</strong>
-                    </div>
-                    <div class="box_info">
-                      <span class="count">10 / 3 (1)</span>
-                      <button type="button" class="btn_application type_dead">마감</button> <!-- 마감케이스일 경우 type_dead 클래스 추가 -->
-                    </div>
-                  </div>
+                <div class="wrap_arrow">
+                  <div class="swiper-button-prev screen_out">이전</div>
+                  <div class="swiper-button-next screen_out">다음</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section_bn">
-        <div class="wrap_mainbanner">
-          <ul class="list_bnmenu">
-            <li>
-              <a href="#none" class="link_menu">
-                <span class="img_box"><img src="../img/main/img_main_bottom1.png" alt="" class="img_g"></span>
-                <strong>교육운영 안내</strong>
+      <section class="section_business">
+        <div class="inner_section">
+          <h3 class="wrap_tit">지원사업</h3>
+          <div class="slide_business">
+            <div class="swiper-wrapper">
+              <a href="#none" class="swiper-slide slide1">
+                <div class="img_box"><img src="img/main/thumb_business.png" alt="지원사업 이미지1" class="img_g"></div>
+                <strong class="tit_list">지원사업 제목입니다.</strong>
               </a>
-            </li>
-            <li>
-              <a href="#none" class="link_menu">
-                <span class="img_box"><img src="../img/main/img_main_bottom2.png" alt="" class="img_g"></span>
-                <strong>대강당 일정 및 신청</strong>
+              <a href="#none" class="swiper-slide slide2">
+                <div class="img_box"><img src="img/main/thumb_business2.png" alt="지원사업 이미지2" class="img_g"></div>
+                <strong class="tit_list">지원사업 제목입니다.</strong>
               </a>
-            </li>
-            <li>
-              <a href="#none" class="link_menu">
-                <span class="img_box"><img src="../img/main/img_main_bottom3.png" alt="" class="img_g"></span>
-                <strong>강사지원 신청</strong>
+              <a href="#none" class="swiper-slide slide3">
+                <div class="img_box"><img src="img/main/thumb_business2.png" alt="지원사업 이미지2" class="img_g"></div>
+                <strong class="tit_list">지원사업 제목입니다.</strong>
               </a>
-            </li>
-            <li>
-              <a href="#none" class="link_menu">
-                <span class="img_box"><img src="../img/main/img_main_bottom4.png" alt="" class="img_g"></span>
-                <strong>묻고 답하기</strong>
-              </a>
-            </li>
-          </ul>
+            </div>              
+            <div class="wrap_arrow">
+              <div class="swiper-button-prev screen_out">이전</div>
+              <div class="swiper-button-next screen_out">다음</div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

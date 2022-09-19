@@ -1,57 +1,27 @@
-$(function(){
-  /* 2022-06-23 수정 시작 */
-  // main visual slider
-  const autoplay = 5000;
-  const swiperMv = new Swiper('.slide_mv', {
-      effect: 'fade',
-      loop: true,
-      navigation: {
-        nextEl: ".slide_mv .swiper-button-next",
-        prevEl: ".slide_mv .swiper-button-prev",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-        pagination: {
-          el: ".page_active",
-          clickable: false,
-          renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + '0' + (index + 1) + "<span class='outer_progress'><em class='progress'></em></span></span>";
-          },
-      },
-  });
-  /* 2022-06-23 수정 끝 */
-  // main top banner
-  $('.head_banner .btn_close').click(function(){
-    $(this).parent().hide();
-    $('#wrap').removeClass('has_headbanner');
-  });
-
-  // main tab
-  $('.wrap_tabedu .link_tab').click(function(e){
-    e.preventDefault();
+$(function(){  
+  // wrap_tabmain tab
+  $('.wrap_tabmain .tab_mv').click(function(){
     if($(this).attr('aria-selected', false)){
-      $('.wrap_tabedu .link_tab').attr('aria-selected', false);
+      $('.wrap_tabmain .tab_mv').attr('aria-selected', false);
       $(this).attr('aria-selected', true);
     }
   });
   
-  // main entrolment slider
-  const swiperEdu = new Swiper('.slide_edu', {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    navigation: {
-      nextEl: ".wrap_edu .swiper-button-next",
-      prevEl: ".wrap_edu .swiper-button-prev",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
+  // tab_reservation
+  $('.tab_reservation .link_resv').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('resv_facility')){
+     $('.body_calendar .list_calendar').addClass('resv_facility').removeClass('resv_equipment');
+    }else if($(this).hasClass('resv_equipment')){
+      $('.body_calendar .list_calendar').addClass('resv_equipment').removeClass('resv_facility');
+    }
+  });
+  
+  // tab news
+  $('.tab_news .link_tab').click(function(e){
+    e.preventDefault();
+    if($(this).hasClass('on')===false){
+      $(this).addClass('on').siblings().removeClass('on');
     }
   });
   
@@ -59,11 +29,36 @@ $(function(){
   const swiperpopup = new Swiper('.slide_popup', {
     spaceBetween: 10,
     loop: true,
-    pagination: {
-      el: '.slide_popup .swiper-pagination',
-      type: 'bullets',
+    navigation: {
+      nextEl: ".slide_popup .swiper-button-next",
+      prevEl: ".slide_popup .swiper-button-prev",
       clickable: true,
     },
+    pagination: {
+      el: ".page_active",
+      clickable: false,
+      renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+      },
+    },
+  });
+
+   // main business slider
+   const swiperBusiness = new Swiper('.slide_business', {
+    slidesPerView: 2,
+    spaceBetween: 11,
+    delay: 4000,
+    navigation: {
+      nextEl: ".slide_business .swiper-button-next",
+      prevEl: ".slide_business .swiper-button-prev",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 45,
+      },
+    }
   });
 
   // sub tab
@@ -75,17 +70,6 @@ $(function(){
     }
   });
 
-  /* 2022-08-09 popup */
-  // sub popoup
-  $('.cont_flextable .col_btn .btn_apply, .section_edu .wrap_btn .link_apply').click(function(e){
-    e.preventDefault();
-    $('.wrap_subpopup').css('display', 'flex');
-  });
-  $('.wrap_subpopup .btn_close, .bg_subpopup').click(function(e){
-    e.preventDefault();
-    $('.wrap_subpopup').hide();
-  });
-  /* // 2022-08-09 popup */
   
   // module remove
   $('.area_input .btn_remove').click(function(){
