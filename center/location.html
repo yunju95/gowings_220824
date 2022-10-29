@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양드론센터</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">오시는길 본문</h2>
+      <section class="section_airfield">
+        <div class="section_inner">
+          <div class="wrap_subtit type_bdb">
+            <h3>오시는길</h3>
+          </div>
+          <div class="area_map">
+            <div class="info_map">
+              <strong>고양드론앵커센터</strong>
+              <p><span class="tit_dot">주소</span>경기도 고양시 덕양구 화전동 183-33번지 일원</p>
+              <p><span class="tit_dot">대표전화</span>010-7240(7241)-8075</p>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>

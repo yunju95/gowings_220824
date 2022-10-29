@@ -138,6 +138,18 @@ $(function(){
     $('.wrap_gnb .list_menudep2').hide();
     $('.wrap_gnb .bg_depth2').hide();
   });
+  $(window).on('load resize', function(){
+    if($(this).innerWidth() > 1024) {
+      $('.header').removeClass('ov');
+      $('.header').hover(function(){
+        $(this).addClass('ov');
+      }, function(){
+        $(this).removeClass('ov');
+      });
+    } else{
+      $('.header').addClass('ov');
+    }
+  });
 
   // all menu
   $('.wrap_gnb .btn_allmenu').click(function(){

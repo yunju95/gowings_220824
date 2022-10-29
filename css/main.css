@@ -1,9 +1,9 @@
 /* section mv */
 .section_mv{background-color:#000}
 .section_mv .wrap_mv{position: relative;overflow:hidden;padding-top:41.756%}
-.section_mv .wrap_mv .video{position:absolute;top:50%;left:50%;height: 100%;transform:translate(-50%, -50%)}
+.section_mv .wrap_mv .video{position:absolute;top:50%;left:50%;width: 100%;transform:translate(-50%, -50%)}
 .section_mv .wrap_mv .img_g{display: none;width:100%}
-.section_mv .wrap_mv .tit_mv{position: absolute;top:15.5%;left:0;width:100%;font-family: 'NanumSquareRoundExtraBold';text-align: center;font-size:4.8vw;font-weight:900;color:#fff}
+.section_mv .wrap_mv .tit_mv{display: none;position: absolute;top:15.5%;left:0;width:100%;font-family: 'NanumSquareRoundExtraBold';text-align: center;font-size:4.8vw;font-weight:900;color:#fff}
 
 /* section calendar */
 .inner_section{max-width:1200px;margin:0 auto;}
@@ -91,6 +91,7 @@
   .section_mv .wrap_mv{padding-top: 0;}
   .section_mv .wrap_mv .video{display: none;}
   .section_mv .wrap_mv .img_g{display: block;}
+  .section_mv .wrap_mv .tit_mv{display: block}
 
   .section_calendar .wrap_tabmain {top: -27.5px;}
   .section_calendar .wrap_tabmain .tab_mv {width: 105px;height: 27.5px;font-size: 13px;line-height: 27.5px;}
