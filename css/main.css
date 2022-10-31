@@ -3,13 +3,13 @@
 .section_mv .wrap_mv{position: relative;overflow:hidden;padding-top:41.756%}
 .section_mv .wrap_mv .video{position:absolute;top:50%;left:50%;width: 100%;transform:translate(-50%, -50%)}
 .section_mv .wrap_mv .img_g{display: none;width:100%}
-.section_mv .wrap_mv .tit_mv{display: none;position: absolute;top:15.5%;left:0;width:100%;font-family: 'NanumSquareRoundExtraBold';text-align: center;font-size:4.8vw;font-weight:900;color:#fff}
+.section_mv .wrap_mv .tit_mv{display: none;position: absolute;top:15.5%;left:0;width:100%;font-family: 'NanumSquareExtraBold';text-align: center;font-size:4.8vw;font-weight:900;color:#fff}
 
 /* section calendar */
 .inner_section{max-width:1200px;margin:0 auto;}
 .section_calendar{position: relative;}
 .section_calendar .wrap_tabmain{position: absolute;left:50%;top:-45px;font-size:0;white-space:nowrap;transform:translateX(-50%)}
-.section_calendar .wrap_tabmain .tab_mv{display:inline-block;width:160px;height:45px;font-family: 'NanumSquareRound';font-size:18px;line-height:45px;text-align:center;color:#fff;vertical-align:top;background-color:#46368b;cursor:pointer}
+.section_calendar .wrap_tabmain .tab_mv{display:inline-block;width:160px;height:45px;font-family: 'NanumSquare';font-size:18px;line-height:45px;text-align:center;color:#fff;vertical-align:top;background-color:#46368b;cursor:pointer}
 .section_calendar .wrap_tabmain .tab_mv[aria-selected="true"]{color:#333;background-color:#f9fafd}
 
 .section_calendar{padding:29px 0;background-color: #f4f8fd;}
@@ -17,17 +17,17 @@
 .section_calendar .head_calendar{flex-shrink: 0;display: flex;flex-direction: row-reverse;align-items: center;position:relative;padding-right:31px;}
 .section_calendar .head_calendar::after{position: absolute;right:0;top:50%;width:1px;height:105px;background-color:#e2e2e2;transform:translateY(-50%);content:''}
 .section_calendar .head_calendar .area_month{padding:0 31px;text-align: center;}
-.section_calendar .head_calendar .area_month .txt_month{display:block;font-size:48px;font-family: 'NanumSquareRoundBold';color:#333;font-weight: 500;line-height: 1;}
-.section_calendar .head_calendar .area_month .txt_year{display:block;margin-top:10px;font-family: 'NanumSquareRound';font-size:24px;color:#333;line-height: 1;}
-.section_calendar .head_calendar .link_resv{display: block;width:95px;font-family: 'NanumSquareRound';font-size:18px;line-height:32px;text-align: center;border-radius: 16px;color:#fff;}
+.section_calendar .head_calendar .area_month .txt_month{display:block;font-size:48px;font-family: 'NanumSquare';color:#333;font-weight: 500;line-height: 1;}
+.section_calendar .head_calendar .area_month .txt_year{display:block;margin-top:10px;font-family: 'NanumSquare';font-size:24px;color:#333;line-height: 1;}
+.section_calendar .head_calendar .link_resv{display: block;width:95px;font-family: 'NanumSquare';font-size:18px;line-height:32px;text-align: center;border-radius: 16px;color:#fff;}
 .section_calendar .head_calendar .resv_facility{background-color:#46368b;}
 .section_calendar .head_calendar .resv_equipment{margin-top:5px;background-color:#6d75e0;}
 .section_calendar .body_calendar{flex:1}
 .section_calendar .list_calendar{display: flex;padding:0 11px;justify-content: space-between;}
 .section_calendar .list_calendar .link_date{display:block;height:123px;padding:20px 18px 0;text-align: center;border: 1px solid transparent;box-sizing: border-box;}
 .section_calendar .list_calendar .link_date.type_today{border-radius:7px;border-color: #f0f0f0;background-color: #fff;}
-.section_calendar .list_calendar .txt_date{display:inline-block;font-family: 'NanumSquareRound';font-size:24px;color:#333}
-.section_calendar .list_calendar .num_date{display:block;width:42px;line-height:42px;margin-top:10px; font-family: 'NanumSquareRound';font-size:18px;color:#fff;border-radius: 100%;}
+.section_calendar .list_calendar .txt_date{display:inline-block;font-family: 'NanumSquare';font-size:24px;color:#333}
+.section_calendar .list_calendar .num_date{display:block;width:42px;line-height:42px;margin-top:10px; font-family: 'NanumSquare';font-size:18px;color:#fff;border-radius: 100%;}
 .section_calendar .resv_facility .num_date{background-color:#46368b;}
 .section_calendar .resv_equipment .num_date{background-color:#6d75e0;}
 .section_calendar .type_past .num_date{background-color:#ff6a1f;}

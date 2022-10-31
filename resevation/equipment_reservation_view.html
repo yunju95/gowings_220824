@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양드론센터</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <a href="#gnb">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- //skip_nav -->
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <script>
+        $(function(){ $('.header').load('../layout/header.html');});
+      </script>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div id="container" class="sub">
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">시설예약 본문</h2>
+      <section class="section_reservation">
+        <div class="section_inner">
+          <div class="wrap_subtit type_bdn">
+            <h3>장비예약</h3>
+            <p>이용하고자 하는 장비 예약 신청이 가능합니다.</p>
+          </div>
+          <div class="area_notice">
+            <strong class="tit_notice">주의사항</strong>
+            <ul class="list_dot type_fc3">
+              <li><em class="emph_txt">제출서류</em> 확인 필수</li>
+              <li>현장방문 시 대여자 <em class="emph_txt">본인 신분증 지참</em>필수</li>
+              <li>장비 대여 및 반납시 방문전 <em class="emph_txt">033-245-6313</em>으로 연락 부탁드립니다.</li>
+            </ul>
+          </div>
+          <div class="area_reservation">
+            <strong class="tit_info">EKASN FXA204드론</strong>
+            <div class="box_reservation">
+              <div class="wrap_select">
+                <select name="" id="" class="select">
+                  <option value="구분 선택" selected>구분 선택</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+              <div class="wrap_select">
+                <select name="" id="" class="select">
+                  <option value="구분 선택" selected>구분 선택</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+            </div>
+            <div class="box_info">
+              <div class="border_box">
+                <div class="img_box"><img src="../img/sub/thumb_equipment.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <script>
+        $(function(){ $('.footer').load('../layout/footer.html'); });
+      </script>
+    </footer>
+    <!-- // footer -->
+  </div>
+</body>
+</html>
