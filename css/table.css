@@ -1,8 +1,18 @@
 /* input custom global */
 .select{display:block;position:relative;width:100%;height:100%;padding:0 10px;border: none;color:#333;box-sizing: border-box;}
+.select_box{position: relative;display: block;border: 1px solid #ccc;background-color: #fff;box-sizing: border-box;}
+.select_box::after{position: absolute;width:12px;height:7px;background: url(../img/sub/ico_select_arr.png) no-repeat 0 0;background-size:100%;content:''}
 .input{display:block;width:100%;height:100%;padding: 0 10px;border:none;color:#333;box-sizing: border-box;}
+.input_box{display:block;position:relative;border: 1px solid #ccc;background-color: #fff;box-sizing: border-box;}
+.textarea{display:block;width:100%;height:100%;padding: 10px;border:none;color:#333;box-sizing: border-box;}
+.textarea_box{display:block;position:relative;border: 1px solid #ccc;background-color: #fff;box-sizing: border-box;}
 .label{display: inline-block;vertical-align: top;}
 input[type="checkbox"].checkbox{width:0;height:0;overflow:hidden;text-indent: -999px;}
+input[type="radio"].radio{overflow:hidden;text-indent:-999px;width:0;height:0;}
+input[type="radio"].radio + .ico_radio{display: inline-block;position:relative;margin-right:10px;vertical-align: top;width:16px;height: 16px;border-radius: 100%;border: 1px solid #ddd;}
+input[type="radio"].radio:checked + .ico_radio:after{position: absolute;content: '';left:50%;top:50%;width:8px;height:8px;border-radius:100%;background-color:#555;transform:translate(-50%, -50%);}
+
+
 
 /* table css */
 .cont_tbl + .tbl_tit{padding-top: 50px;}

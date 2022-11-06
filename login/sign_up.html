@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고양시 생태환경교육센터</title>
+  <title>고양드론센터</title>
   <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="../css/common.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -28,102 +28,146 @@
     <!-- // header -->
     <!-- container -->
     <div id="container" class="sub">
-      <h2 class="screen_out">로그인 본문</h2>
+      <div class="wrap_submenu">
+        <script>
+          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
+        </script>
+      </div>
+      <h2 class="screen_out">회원가입 본문</h2>
       <section class="section_login">
         <div class="section_inner">
-          <div class="wrap_subtit">
+          <div class="wrap_subtit type_bdn">
             <h3>회원가입</h3>
+            <p>회원가입하시면 많은 서비스를 이용할 수 있습니다.</p>
           </div>
           <!-- 신청 default -->
           <div class="area_input">
-            <p class="desc_essential"><em>*</em> 필수 입력 항목입니다.</p>
-            <div class="cont_input">
-              <!-- 이름 -->
-              <div class="module_input">
-                <label for="ip1" class="label">이름</label>
-                <div class="wrap_input">
-                  <span class="box_input"><input type="text" id="ip1" class="input" value="홍길동" readonly></span> <!-- 값을 이미 가지고 잇는 경우 readonly 속성 추가 -->
-                </div>
-              </div>
-              <!-- 생년월일 -->
-              <div class="module_input">
-                <label for="ip2" class="label">생년월일</label>
-                <div class="wrap_input">
-                  <span class="box_input">
-                    <input type="date" id="ip2" class="input" value="2000-01-02" readonly> <!-- input 날짜값은 보통 기본 date type으로 넣는데 디자인이나 기획서에 아무런 정보가 없어 일단 type='date'로 작업하였습니다 개발하시며 수정하여 사용해주세요 -->
-                  </span> <!-- 값을 이미 가지고 잇는 경우 readonly 속성 추가 -->
-                </div>
-              </div>
-              <!-- 비밀번호 -->
-              <div class="module_input">
-                <label for="ip3" class="label type_est">비밀번호</label> <!-- 필수값인 경우 type_est 클래스 추가 -->
-                <div class="wrap_input">
-                  <span class="box_input"><input type="password" id="ip3" class="input" placeholder="9자리이상 영문, 숫자 조합"></span> 
-                </div>
-              </div>
-              <!-- 비밀번호 -->
-              <div class="module_input">
-                <label for="ip4" class="label type_est">비밀번호확인</label> <!-- 필수값인 경우 type_est 클래스 추가 -->
-                <div class="wrap_input">
-                  <span class="box_input"><input type="password" id="ip4" class="input" placeholder="9자리이상 영문, 숫자 조합"></span> 
-                </div>
-              </div>
-              <!-- 성별 -->
-              <div class="module_input">
-                <label for="ip5" class="label">성별</label>
-                <div class="wrap_input">
-                  <span class="box_input"><input type="text" id="ip5" class="input" value="남" readonly></span> <!-- 값을 이미 가지고 잇는 경우 readonly 속성 추가 -->
-                </div>
-              </div>
-              <!-- 연락처 -->
-              <div class="module_input">
-                <label for="ip6" class="label type_est">연락처</label> <!-- 필수값인 경우 type_est 클래스 추가 -->
-                <div class="wrap_input input_tel"> <!-- 연락처 Input wrapper일 경우 input_tel 클래스 추가 --> 
-                  <span class="box_input type_select select_tel"> <!-- 셀렉트박스를 감싸고 있을 경우 type_select 클래스 추가, 번호 셀렉트 박스일경우 select_tel 클래스 추가 -->
-                    <select name="localTel" id="ip6" class="select">
-                      <option value="선택" selected>선택</option>
-                      <option value="010">010</option>
-                      <option value="011">011</option>
-                    </select>
+            <p class="desc_essential">* 필수 입력 항목입니다.</p>
+            <div class="cont_view">
+              <div class="input_view">
+                <div class="row">
+                  <!-- 이름 -->
+                  <strong class="tit">이름</strong>
+                  <span class="info">
+                    <span class="txt">
+                      <span class="input_box"><input type="text" id="" class="input"></span>
+                    </span>
                   </span>
-                  -
-                  <span class="box_input"><input type="text" id="ip6-2" class="input"></span>
-                  -
-                  <span class="box_input"><input type="text" id="ip6-3" class="input"></span>
-                </div>
-              </div>
-              <!-- 주소 -->
-              <div class="module_input">
-                <label for="ip7" class="label type_est">주소</label> <!-- 필수값인 경우 type_est 클래스 추가 -->
-                <div class="wrap_input input_addr"> <!-- 주소 Input wrapper일 경우 input_addr 클래스 추가 --> 
-                  <span class="box_input"><input type="text" id="ip7" class="input"></span>
-                  <span class="box_input"><input type="text" id="ip7-2" class="input" placeholder="기본주소"></span>
-                  <span class="box_input"><input type="text" id="ip7-3" class="input" placeholder="나머지주소"></span>
-                  <a href="#none" class="link_search">주소검색</a>
-                </div>
-              </div>
-              <!-- 이메일 -->
-              <div class="module_input">
-                <label for="ip8" class="label">이메일</label>
-                <div class="wrap_input input_email"> <!-- 이메일 Input wrapper일 경우 input_email 클래스 추가 --> 
-                  <span class="box_input"><input type="text" id="ip8" class="input"></span>
-                  <span class="box_email">@</span>
-                  <span class="box_input"><input type="text" id="ip8-2" class="input"></span>
-                  <span class="box_input type_select"> <!-- 셀렉트박스를 감싸고 있을 경우 type_select 클래스 추가 -->
-                    <select name="email" id="ip8-3" class="select">
-                      <option value="선택" selected>선택</option>
-                      <option value="naver.com">naver.com</option>
-                      <option value="gmail.com">gmail.com</option>
-                    </select>
+                  <!-- // 이름 -->
+                  <!-- 생년월일 -->
+                  <strong class="tit">생년월일</strong>
+                  <span class="info">
+                    <span class="txt">
+                      <span class="input_box"><input type="text" id="" class="input"></span>
+                    </span>
                   </span>
+                  <!-- // 생년월일 -->
+                </div>
+                <div class="row">
+                  <!-- 아이디 -->
+                  <strong class="tit">아이디<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <span class="txt">
+                      <span class="input_box"><input type="text" id="id" class="input"></span>
+                    </span>
+                  </span>
+                  <!-- // 아이디 -->
+                </div>
+                <div class="row">
+                  <!-- 비밀번호 -->
+                  <strong class="tit">비밀번호<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <span class="txt">
+                      <span class="input_box"><input type="text" id="password" class="input" placeholder="9자리이상 영문, 숫자 조합"></span>
+                    </span>
+                  </span>
+                  <!-- // 비밀번호 -->
+                  <!-- 비밀번호 확인 -->
+                  <strong class="tit">비밀번호확인<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <span class="txt">
+                      <span class="input_box"><input type="text" id="password" class="input"></span>
+                    </span>
+                  </span>
+                  <!-- // 비밀번호 확인 -->
+                </div>
+                <div class="row">
+                  <!-- 성별 -->
+                  <strong class="tit">성별<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <span class="txt">
+                      <label for="radio01" class="label">
+                        <input type="radio" id="radio01" name="radio" class="radio" checked="checked">
+                        <span class="ico_radio"></span>남
+                      </label>
+                      <label for="radio02" class="label">
+                        <input type="radio" id="radio02" name="radio" class="radio" >
+                        <span class="ico_radio"></span>여
+                      </label>
+                    </span>
+                  </span>
+                  <!-- // 성별 -->
+                  <!-- 휴대전화 -->
+                  <strong class="tit">휴대전화<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <span class="txt">
+                      <div class="wrap_input_tel">
+                        <span class="select_box">
+                          <select name="localTel" id="" class="select">
+                            <option value="선택" selected>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                          </select>
+                        </span>
+                        <br class="type_mo">
+                        <span class="input_box"><input type="text" id="" class="input"></span>
+                        <span class="input_box"><input type="text" id="" class="input"></span>
+                      </div>
+                    </span>
+                  </span>
+                  <!-- // 휴대전화 -->
+                </div>
+                <div class="row">
+                  <!-- 주소 -->
+                  <strong class="tit">주소<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <div class="wrap_input_addr">
+                      <div class="top_addr">
+                        <span class="input_box"><input type="text" id="" class="input"></span>
+                        <a href="#none" class="link_search">주소검색</a>
+                      </div>
+                      <span class="input_box input_addr"><input type="text" id="" class="input"></span>
+                      <span class="input_box"><input type="text" id="" class="input"></span>
+                    </div>
+                  </span>
+                  <!-- //주소 -->
+                </div>
+                <div class="row">
+                  <!-- 이메일 -->
+                  <strong class="tit">이메일<em class="type_essential">*</em></strong>
+                  <span class="info">
+                    <div class="wrap_input_email">
+                      <span class="input_box"><input type="text" id="" class="input"></span>
+                      <span class="box_email">@</span>
+                      <span class="input_box"><input type="text" id="" class="input"></span>
+                      <span class="select_box">
+                        <select name="email" id="" class="select">
+                          <option value="선택" selected>선택</option>
+                          <option value="naver.com">naver.com</option>
+                          <option value="gmail.com">gmail.com</option>
+                        </select>
+                      </span>
+                    </span>
+                  </div>
+                  <!-- // 이메일 -->
                 </div>
               </div>
             </div>
           </div>
           <!-- btn -->
-          <div class="wrap_link">
-            <a href="#none" class="link_submit">회원가입</a>
-            <a href="#none" class="link_cancle">취소</a>
+          <div class="wrap_btn">
+            <a href="#none" class="btn_comm">회원가입</a>
+            <a href="#none" class="btn_comm btn_cancle">취소</a>
           </div>
         </div>
       </section>

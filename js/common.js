@@ -70,4 +70,14 @@ $(function(){
     }
   });
 
+  // popoup
+  $('.list_gallery .link_gallery').click(function(e){
+    e.preventDefault();
+    $('.outer_popup').css('display', 'flex');
+  });
+  $('.outer_popup .wrap_popup .btn_close').click(function(e){
+    e.preventDefault();
+    $('.outer_popup').hide();
+  });
+
 });
