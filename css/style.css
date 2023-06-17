@@ -183,6 +183,62 @@
 .area_edu .list_body .col_tit p{white-space: pre-line;text-align: left;}
 .area_edu .list_body .btn_state{display:block;margin: 0 auto;width:100px;line-height:48px;border: 1px solid #20438f;color: #20438f;border-radius: 25px;background-color: #fff;text-align: center;}
 .area_edu .list_body .btn_state.type_finish{border-color: #ff6c00;color: #ff6c00;}
+/* 2023-06-17 추가 시작 */
+.outer_popup .wrap_popup.type_signature{max-width:800px;width:100%;height:100%;padding:60px 0 0}
+.outer_popup .wrap_popup.type_signature .cont_popup{height:100%;padding:0 20px 80px;overflow-y:auto;}
+.outer_popup .wrap_popup.type_signature .btn_close{top:15px;right:20px}
+.area_pledge .head_pledge strong{display:block;font-size:24px;line-height:1.5;text-align: center;}
+.area_pledge .box_signature{margin:10px 0 15px;padding:10px 20px 20px;border:1px solid #000;}
+.area_pledge .box_signature strong{display:block;font-size:24px;line-height:1.5;text-align: center;}
+.area_pledge .box_signature .desc_g{padding:5px 0;font-size:16px;line-height:1.7;letter-spacing:0.05em;}
+.area_pledge .box_signature .info_signature{display: flex;flex-direction: column;align-items: flex-end;}
+.area_pledge .box_signature .info_signature > *{display: flex;max-width:350px;width:100%}
+.area_pledge .box_signature .info_signature > * > span {flex:1;line-height:2;}
+.area_pledge .box_signature .info_signature .wrap_date span{text-align: center;}
+.area_pledge .box_signature .info_signature .wrap_signature .signature{color:#ccc;text-align: center;}
+.area_pledge .box_signature .info_signature .wrap_tel{padding-left:50px}
+.area_pledge .wrap_statute{margin-top:30px}
+.area_pledge .wrap_statute strong{display: block;font-size:17px}
+.area_pledge .wrap_statute strong span{font-weight:300}
+.area_pledge .wrap_statute ol{padding: 10px 0 0 20px;}
+.area_pledge .wrap_statute li{font-size:14px;line-height: 1.7}
+
+.cont_tbl_signature{position: relative;padding-top: 24px;margin-top: -24px}
+.cont_tbl_signature::before{display: none;position: absolute;top: -3.5px;right: 11.5px;width: 17.5px;height: 26.5px;background: url(../img/sub/ico_tbl_drag.png) no-repeat;background-size: cover;content: '';}
+.cont_tbl_signature:active::after{opacity: 0.5}
+.cont_tbl_signature .tbl_outer{overflow-x: auto;}
+.cont_tbl_signature .tbl{width: 100%;border: 1px solid #000;}
+.cont_tbl_signature .tbl .emph{border:3px solid #000}
+.cont_tbl_signature .tbl th{padding:2px 5px;border: 1px solid #000;font-size: 14px;line-height: 1.5;font-weight: 500;text-align:left;color: #000;background-color: #e4f9f7;white-space: nowrap;}
+.cont_tbl_signature .tbl thead th{font-size:15px;background:#ddd}
+.cont_tbl_signature .tbl td{padding:2px 5px;border: 1px solid #000;font-size: 14px;line-height: 1.5;font-weight: 400;text-align:left;color: #000;white-space: nowrap;}
+.cont_tbl_signature .tbl.tc th,
+.cont_tbl_signature .tbl.tc td,
+.cont_tbl_signature .tbl th.tc,
+.cont_tbl_signature .tbl td.tc {text-align: center;}
+.cont_tbl_signature .tbl th:first-child,
+.cont_tbl_signature .tbl td:first-child{border-left: none}
+.cont_tbl_signature .tbl th:last-child,
+.cont_tbl_signature .tbl td:last-child{border-right: none}
+.cont_tbl_signature .tbl td .link_attach {text-decoration: underline;}
+.cont_tbl_signature .tbl td .emph_txt{color:#7d191b}
+.cont_tbl_signature + .desc_tbl{margin-top:10px;padding-left:0}
+.cont_tbl_signature + .desc_tbl::before{display: none;}
+@media screen and (max-width: 767px){
+  .outer_popup .wrap_popup.type_signature{padding-top: 40px;}
+  .outer_popup .wrap_popup.type_signature .cont_popup{padding:0 15px 50px}
+  .area_pledge .box_signature{padding:7px 10px 10px}
+  .area_pledge .head_pledge strong,
+  .area_pledge .box_signature strong{font-size: 18px;}
+  .area_pledge .box_signature .desc_g{font-size: 14px;}
+  .area_pledge .box_signature .info_signature > *{font-size: 13px}
+  .cont_tbl_signature .tbl thead th{font-size: 14px;}
+  .cont_tbl_signature .tbl th,
+  .cont_tbl_signature .tbl td{font-size: 13px;}
+  .area_pledge .wrap_statute strong{font-size: 15px;}
+  .area_pledge .wrap_statute li{font-size: 14px;}
+}
+/* // 2023-06-17 추가 끝 */
 
 
 /* 5. 알림마당 */

@@ -71,7 +71,7 @@ $(function(){
   });
 
   // popoup
-  $('.list_gallery .link_gallery').click(function(e){
+  $('.list_gallery .link_gallery, .box_reservation .btn_comm').click(function(e){ // 2023-06-17 수정
     e.preventDefault();
     $('.outer_popup').css('display', 'flex');
   });
