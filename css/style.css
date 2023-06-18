@@ -193,15 +193,20 @@
 .area_pledge .box_signature .desc_g{padding:5px 0;font-size:16px;line-height:1.7;letter-spacing:0.05em;}
 .area_pledge .box_signature .info_signature{display: flex;flex-direction: column;align-items: flex-end;}
 .area_pledge .box_signature .info_signature > *{display: flex;max-width:350px;width:100%}
-.area_pledge .box_signature .info_signature > * > span {flex:1;line-height:2;}
-.area_pledge .box_signature .info_signature .wrap_date span{text-align: center;}
-.area_pledge .box_signature .info_signature .wrap_signature .signature{color:#ccc;text-align: center;}
+.area_pledge .box_signature .info_signature .txt_g {display:flex;flex:1;line-height:2;}
+.area_pledge .box_signature .info_signature .input_box {flex:1;height:32px;margin:0 5px;font-size:14px;border-color:#999}
+.area_pledge input[type="radio"].radio + .ico_radio{margin-right:0}
+.area_pledge .box_signature .info_signature .wrap_signature .tit{flex:0 0 auto}
+.area_pledge .box_signature .info_signature .wrap_signature .signature{padding-right:30px;color:#ccc;text-align: center;}
 .area_pledge .box_signature .info_signature .wrap_tel{padding-left:50px}
 .area_pledge .wrap_statute{margin-top:30px}
 .area_pledge .wrap_statute strong{display: block;font-size:17px}
 .area_pledge .wrap_statute strong span{font-weight:300}
 .area_pledge .wrap_statute ol{padding: 10px 0 0 20px;}
 .area_pledge .wrap_statute li{font-size:14px;line-height: 1.7}
+
+.area_pledge .inp_chk{display: inline-block;position:relative;width:15px;height:15px;margin-top:2px;border: 1px solid #666;background-color: #fff;vertical-align: top;}
+.area_pledge .checkbox:checked + .inp_chk::after{position: absolute;content:'';left:2px;top:2px;right:2px;bottom:2px;background-color: #666;}
 
 .cont_tbl_signature{position: relative;padding-top: 24px;margin-top: -24px}
 .cont_tbl_signature::before{display: none;position: absolute;top: -3.5px;right: 11.5px;width: 17.5px;height: 26.5px;background: url(../img/sub/ico_tbl_drag.png) no-repeat;background-size: cover;content: '';}
@@ -231,6 +236,7 @@
   .area_pledge .head_pledge strong,
   .area_pledge .box_signature strong{font-size: 18px;}
   .area_pledge .box_signature .desc_g{font-size: 14px;}
+  .area_pledge .box_signature .info_signature .input_box {height:26px;font-size:13px;}
   .area_pledge .box_signature .info_signature > *{font-size: 13px}
   .cont_tbl_signature .tbl thead th{font-size: 14px;}
   .cont_tbl_signature .tbl th,

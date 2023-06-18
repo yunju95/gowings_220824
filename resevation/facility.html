@@ -87,7 +87,7 @@
       </section>
     </div>
     <!-- 2023-06-17 팝업 추가 시작 -->
-    <div class="outer_popup">
+    <div class="outer_popup" style="display: flex;">
       <div class="wrap_popup type_signature">
         <div class="cont_popup">
           <div class="area_pledge">
@@ -99,10 +99,17 @@
               <p class="desc_g">고양대덕드론비행장 이용자는 고양대덕드론비행장에서 이루어지는 비행과 관련하여 준수사항 및 안전수칙을 반드시 지키며, 시설 안전관리자의 지시에 따를 것을 서약합니다. 또한 이를 위반하여 사고가 일어날 경우 어떠한 조치에 대해서도 이의를 제기하지 않을 것이며, 발생한 안전사고에 대하여 민․형사상 모든 책임을 서약자 본인이 질 것을 서약합니다.</p>
               <div class="info_signature">
                 <div class="wrap_date">
-                  <span>2023&nbsp;&nbsp;년</span><span>월</span><span>일</span>
+                  <span class="txt_g"><span class="input_box"><input id="year" type="text" class="input"></span><label for="year">년</label></span>
+                  <span class="txt_g"><span class="input_box"><input id="month" class="input"></span><label for="month">월</label></span>
+                  <span class="txt_g"><span class="input_box"><input id="day" type="text" class="input"></span><label for="day">일</label></span>
                 </div>
-                <div class="wrap_signature"><span class="tit">서약자&nbsp;&nbsp;성명</span><span class="signature">서명</span></div>
-                <div class="wrap_tel"><span>연락처&nbsp;&nbsp;010-</span></div>
+                <div class="wrap_signature">
+                  <span class="txt_g tit"><label for="signature">서약자&nbsp;&nbsp;성명</label></span>
+                  <span class="txt_g signature"><span class="input_box"><input id="signature" type="text" class="input"></span>서명</span>
+                </div>
+                <div class="wrap_tel">
+                  <span class="txt_g"><label for="tel">연락처</label><span class="input_box"><input id="tel" type="tel" class="input"></span></span>
+                </div>
               </div>
             </div>
             <div class="cont_tbl_signature">
@@ -119,23 +126,38 @@
                   </thead>
                   <tbody class="emph">
                     <tr>
-                      <th class="tc"><strong>비행 승인</strong></th>
-                      <th class="tc"><strong>촬영 승인</strong></th>
-                      <th class="tc"><strong>기체 신고</strong></th>
-                      <th class="tc"><strong>보험 가입</strong></th>
-                      <th class="tc"><strong>조종사 자격증</strong></th>
+                      <th class="tc"><strong><label for="approval1" class="label">비행 승인</label></strong></th>
+                      <th class="tc"><strong><label for="approval2" class="label">촬영 승인</label></strong></th>
+                      <th class="tc"><strong><label for="approval3" class="label">기체 신고</label></strong></th>
+                      <th class="tc"><strong><label for="approval4" class="label">보험 가입</label></strong></th>
+                      <th class="tc"><strong><label for="approval5" class="label">조종사 자격증</label></strong></th>
                       <th colspan="2" class="tc"><strong>기제종류</strong></th>
                     </tr>
                     <tr>
-                      <td rowspan="2"></td>
-                      <td rowspan="2"></td>
-                      <td rowspan="2"></td>
-                      <td rowspan="2"></td>
-                      <td rowspan="2"></td>
-                      <td class="tc">고정익</td><td class="tc">회전익</td>
+                      <td rowspan="2" class="tc">
+                        <input type="checkbox" id="approval1" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td rowspan="2" class="tc">
+                        <input type="checkbox" id="approval2" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td rowspan="2" class="tc">
+                        <input type="checkbox" id="approval3" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td rowspan="2" class="tc">
+                        <input type="checkbox" id="approval4" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td rowspan="2" class="tc">
+                        <input type="checkbox" id="approval5" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td class="tc"><label for="approval6" class="label">고정익</label></td><td class="tc"><label for="approval7" class="label">회전익</label></td>
                     </tr>
                     <tr>
-                      <td height="20"></td><td></td>
+                      <td  class="tc">
+                        <input type="checkbox" id="approval6" class="checkbox"><span class="inp_chk"></span>
+                      </td>
+                      <td class="tc">
+                        <input type="checkbox" id="approval7" class="checkbox"><span class="inp_chk"></span>
+                      </td>
                     </tr>
                   </tbody>
                   <thead>
@@ -175,8 +197,8 @@
                   <thead>
                     <tr>
                       <th colspan="5">□ 개인정보 수집</th>
-                      <th width="13%" class="emph tc" style="border-bottom:none">동의</th>
-                      <th width="13%" class="tc">미동의</th>
+                      <th width="13%" class="emph tc" style="border-bottom:none"><label for="agreeY" class="label">동의</label></th>
+                      <th width="13%" class="tc"><label for="agreeN" class="label">미동의</label></th>
                     </tr>
                     <tr>
                       <td colspan="5">
@@ -186,8 +208,12 @@
                         나. 개인정보 보유기간은 서약서 제출일부터 해당연도 연말까지로 합니다.<br>
                         다. 개인정보 수집은 이용자 본인 확인 및 의사소통과 정보전달을 목적으로 합니다
                       </td>
-                      <td class="emph" style="border-top:1px solid #000"></td>
-                      <td></td>
+                      <td class="emph tc" style="border-top:1px solid #000">
+                        <input type="radio" id="agreeY" name="agree" value="Y" class="radio"><span class="ico_radio"></span>
+                      </td>
+                      <td class="tc">
+                        <input type="radio" id="agreeN" name="agree" value="N" class="radio"><span class="ico_radio"></span>
+                      </td>
                     </tr>
                   </thead>
                 </table>
