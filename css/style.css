@@ -204,6 +204,7 @@
 .area_pledge .wrap_statute strong span{font-weight:300}
 .area_pledge .wrap_statute ol{padding: 10px 0 0 20px;}
 .area_pledge .wrap_statute li{font-size:14px;line-height: 1.7}
+.area_pledge .btn_comm{width:200px;margin:20px auto 0}/* 2023-06-19 추가  */
 
 .area_pledge .inp_chk{display: inline-block;position:relative;width:15px;height:15px;margin-top:2px;border: 1px solid #666;background-color: #fff;vertical-align: top;}
 .area_pledge .checkbox:checked + .inp_chk::after{position: absolute;content:'';left:2px;top:2px;right:2px;bottom:2px;background-color: #666;}
