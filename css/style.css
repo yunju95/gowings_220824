@@ -195,6 +195,7 @@
 .area_pledge .box_signature .info_signature > *{display: flex;max-width:350px;width:100%}
 .area_pledge .box_signature .info_signature .txt_g {display:flex;flex:1;line-height:2;}
 .area_pledge .box_signature .info_signature .input_box {flex:1;height:32px;margin:0 5px;font-size:14px;border-color:#999}
+.area_pledge input[type="radio"].radio{position: absolute;z-index: 10;width:16px;height:16px;opacity: 0;}/* 2023-06-19 추가 */
 .area_pledge input[type="radio"].radio + .ico_radio{margin-right:0}
 .area_pledge .box_signature .info_signature .wrap_signature .tit{flex:0 0 auto}
 .area_pledge .box_signature .info_signature .wrap_signature .signature{padding-right:30px;color:#ccc;text-align: center;}
@@ -206,6 +207,7 @@
 .area_pledge .wrap_statute li{font-size:14px;line-height: 1.7}
 .area_pledge .btn_comm{width:200px;margin:20px auto 0}/* 2023-06-19 추가  */
 
+.area_pledge input[type="checkbox"].checkbox{position: absolute;z-index:10;width:15px;height:15px;opacity: 0;}/* 2023-06-19 추가  */
 .area_pledge .inp_chk{display: inline-block;position:relative;width:15px;height:15px;margin-top:2px;border: 1px solid #666;background-color: #fff;vertical-align: top;}
 .area_pledge .checkbox:checked + .inp_chk::after{position: absolute;content:'';left:2px;top:2px;right:2px;bottom:2px;background-color: #666;}
 
